@@ -14,7 +14,7 @@ function Hero() {
 }
   return (
  <section style={{position:'relative',alignItems:'center' ,zIndex:"-1"}} className='flex flex-col md:flex-row px-5 py-10 md:py-1  bg-indigo-600 justify-center'>
-       <div className='md:w-1/2 flex flex-col'>
+       <div className='col-md-6 flex flex-col'>
             <h1 className=' text-white text-6xl font-hero-font'>Hi, <br/> I`m <span className='text-black'>R</span> Rajapandiyan
                 <p className='text-2xl'>I`m MERN Stack Developer</p>
             </h1>
@@ -24,7 +24,7 @@ function Hero() {
                 <a href={config.git} className='hover:text-white'><FaSquareGithub size={40}/></a>
             </div>
        </div>
-       <Image className='md:w-1/3' alt='Hero' src={Heros} />
+       <Image className='col-md-6' alt='Hero' src={Heros} />
     </section>
     
   )
