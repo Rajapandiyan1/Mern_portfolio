@@ -15,7 +15,7 @@ function Hero() {
   return (
   //  <div className='bg-indigo row me-0'>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Fuga, itaque tempore voluptatem libero, natus maiores fugit sed nemo ut harum temporibus consectetur, quaerat quam culpa ducimus. Deleniti dolores iste inventore.</div>
 
-    <section style={{minHeight:'90vh'}} className='row me-0 bg-indigo-700'>
+    <section style={{minHeight:'90vh'}} className='row me-0 bg-indigo-light'>
     <div className='col-12 col-md-6 flex flex-column justify-content-center align-items-center mt-5 mt-md-1 ps-5'>
          <h1 className='text-white'>Hi, <br/> Im <span className='text-black'>R</span> Rajapandiyan 
              <p className='text-2xl text-white'>I`m MERN STACK DEVELOPER</p>
