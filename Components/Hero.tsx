@@ -24,7 +24,7 @@ function Hero() {
              <a href={config.git} className='hover:text-white'><FaSquareGithub size={40}/></a>
          </div>
     </div>
-    <Image className='md:w-1/3' src={Heros} />
+    <Image alt='Hero' className='md:w-1/3' src={Heros} />
  </section>
     
   )
