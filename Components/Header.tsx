@@ -13,12 +13,12 @@ let [open,isopen]=useState(false)
             <div className="flex-shrink-0">
                 <h2 className="text-white text-lg font-bold ms-4">Rajapandiyan</h2>
             </div>
-            <div className="md:hidden">
+            <div className="d-md-none">
                 <button onClick={()=>{isopen(!open)}} className="text-white me-4">
                 <TiThMenu size={30}/>
                 </button>
             </div>
-            <div className="hidden md:flex flex-grow justify-end items-center me-4">
+            <div className="d-none d-md=flex flex-grow justify-end items-center me-4">
                 <ul className="flex space-x-4">
                     <li><Link href="/" className="text-white font-bold text-decoration-none">Home</Link></li>
                     <li><Link href="/About" className="text-white font-bold  text-decoration-none">About</Link></li>
@@ -29,7 +29,7 @@ let [open,isopen]=useState(false)
             </div>
         </div>
     
-   { open && <div className="md:hidden">
+   { open && <div className="d-md-none">
         
         <ul className="flex flex-column gap-y-5 mb-0 pb-3">
                     <li><Link href="/" className="text-white font-bold  text-decoration-none">Home</Link></li>
