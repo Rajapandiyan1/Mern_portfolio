@@ -12,7 +12,7 @@ function page() {
         <div className='md:w-1/2 flex justify-center my-10 md:my-1 px-10'>
             <div className='flex flex-col justify-center'>
 
-            <h1 className='text-4xl border-b-4 border-primary mb-5 w-[140px] font-bold'>About Me</h1>
+            <h1 className='text-4xl border-b-4 border-primary mb-5 w-[140px] text-white font-bold'>About Me</h1>
             <p className='text-2xl text-white'>My name is Rajapandiyan</p>
             <p className='text-2xl text-white'>I`m MERN Stack Developer</p>
             <p className='text-2xl text-white'>Fresher</p>
