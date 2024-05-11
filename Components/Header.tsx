@@ -31,7 +31,7 @@ let [open,isopen]=useState(false)
     
    { open && <div className="md:hidden">
         
-        <ul className="flex flex-column gap-y-5 pb-3">
+        <ul className="flex flex-column gap-y-5 mb-0 pb-3">
                     <li><Link href="/" className="text-white font-bold  text-decoration-none">Home</Link></li>
                     <li><Link href="/About" className="text-white font-bold  text-decoration-none">About</Link></li>
                     <li><Link href="/Project" className="text-white font-bold  text-decoration-none">Project</Link></li>
