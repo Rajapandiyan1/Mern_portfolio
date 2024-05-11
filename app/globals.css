@@ -16,6 +16,9 @@ body {
 .bg-indigo{
   background-color: #051955;
 }
+.navbar-toggler .navbar-toggler-icon {
+  color: white !important;
+}
 .bg-indigo-light{
   background-color: #092a8d;
 
