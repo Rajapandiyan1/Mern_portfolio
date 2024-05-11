@@ -2,6 +2,7 @@ import Header from '@/Components/Header'
 import React from 'react'
 import ResumeImg from '../../Assets/resume.jpg'
 import Image from 'next/image'
+import Link from '@/node_modules/next/link'
 
 
 function page() {
@@ -17,7 +18,7 @@ function page() {
                 <h1 className='text-4xl border-b-4 border-primary mb-5 w-[140px] font-bold'>Resume</h1>
                 <p className='pb-5'>You can view my resume </p>
                 <button className="bg-yellow-500 hover:bg-yellow-700 transition duration-300 text-white font-bold py-2 px-4 rounded">
-  <a download={true} href={'https://i.ibb.co/xggC368/Resume-1.png'}>View Resume</a>
+  <Link download={true} href={'https://i.ibb.co/xggC368/Resume-1.png'}>View Resume</Link>
 </button>
 
             </div>

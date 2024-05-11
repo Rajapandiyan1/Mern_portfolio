@@ -29,7 +29,7 @@ export default function Project() {
     return <section id='projects' style={{minHeight:'90vh'}} className="flex bg-indigo-light py-10 md:py-1  flex-col  px-5 justify-center bg-primary text-white">
         <div className="w-full">
             <div className="flex flex-col px-10 py-1">
-                <h1 className="text-4xl border-b-4 border-secondary mb-5 w-[150px] font-bold pb-2">Projects</h1>
+                <h1 className="text-4xl border-b-4 border-primary mb-5 w-[140px] font-bold">Projects</h1>
                 <p className='mb-2'>These are some of my best projects. I have built these with React with Node.js</p>
             </div>
         </div>

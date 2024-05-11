@@ -18,7 +18,7 @@ const Header = () => {
               </div>
               <div className="d-block d-md-none">
                   <button onClick={toggleMenu} type="button" className="text-white hover:text-gray-300 focus:outline-none focus:text-gray-300">
-                      <svg className="h-6 w-6" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                      <svg className="h-6 w-6 text-white" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
                           <path d="M4 6h16M4 12h16M4 18h16" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"/>
                       </svg>
                   </button>
