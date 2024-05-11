@@ -25,11 +25,11 @@ const Header = () => {
               </div>
               <div className="hidden md:block">
                   <div className="ml-10 flex items-baseline space-x-4">
-                      <Link href="#" className="text-white font-bold text-decoration-none hover:text-gray-300">Home</Link>
-                      <Link href="#" className="text-white font-bold text-decoration-none hover:text-gray-300">About</Link>
-                      <Link href="#" className="text-white font-bold text-decoration-none hover:text-gray-300">Project</Link>
-                      <Link href="#" className="text-white font-bold text-decoration-none hover:text-gray-300">Contact</Link>
-                      <Link href="#" className="text-white font-bold text-decoration-none hover:text-gray-300">Resume</Link>
+                      <Link href="/" className="text-white font-bold text-decoration-none hover:text-gray-300">Home</Link>
+                      <Link href="/About" className="text-white font-bold text-decoration-none hover:text-gray-300">About</Link>
+                      <Link href="/Project" className="text-white font-bold text-decoration-none hover:text-gray-300">Project</Link>
+                      <Link href="/Contact" className="text-white font-bold text-decoration-none hover:text-gray-300">Contact</Link>
+                      <Link href="/Resume" className="text-white font-bold text-decoration-none hover:text-gray-300">Resume</Link>
                   </div>
               </div>
           </div>
@@ -37,11 +37,12 @@ const Header = () => {
       {/* Mobile menu, show/hide based on menu state. */}
       {isOpen && (
           <div className="md:hidden">
-              <div className="px-2 pt-2 pb-3 space-y-1 sm:px-3">
-                  <a href="#" className="text-white hover:text-gray-300 block">Home</a>
-                  <a href="#" className="text-white hover:text-gray-300 block">Link</a>
-                  <a href="#" className="text-white opacity-50 cursor-not-allowed block">Disabled</a>
-              </div>
+              <div className="px-3 pt-2 pb-3 space-y-1 sm:px-3 flex flex-col">
+              <Link href="/" className="text-white font-bold text-decoration-none hover:text-gray-300">Home</Link>
+                      <Link href="/About" className="text-white font-bold text-decoration-none hover:text-gray-300">About</Link>
+                      <Link href="/Project" className="text-white font-bold text-decoration-none hover:text-gray-300">Project</Link>
+                      <Link href="/Contact" className="text-white font-bold text-decoration-none hover:text-gray-300">Contact</Link>
+                      <Link href="/Resume" className="text-white font-bold text-decoration-none hover:text-gray-300">Resume</Link>  </div>
           </div>
       )}
   </nav>
