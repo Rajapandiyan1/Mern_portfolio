@@ -36,7 +36,7 @@ const Header = () => {
       </div>
       {/* Mobile menu, show/hide based on menu state. */}
       {isOpen && (
-          <div className="d-md-none">
+          <div className="d-md-none d-flex flex-column">
               <div className="px-3 pt-2 pb-3 space-y-1 sm:px-3 flex flex-col">
               <Link href="/" className="text-white font-bold text-decoration-none hover:text-gray-300">Home</Link>
                       <Link href="/About" className="text-white font-bold text-decoration-none hover:text-gray-300">About</Link>
