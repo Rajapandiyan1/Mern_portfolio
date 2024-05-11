@@ -13,7 +13,7 @@ function Hero() {
     git:"https://github.com/Rajapandiyan1"
 }
   return (
- <section style={{position:'relative',alignItems:'center' ,zIndex:"-1"}} className='flex flex-col md:flex-row px-5 py-10 md:py-1  bg-indigo-600 justify-center'>
+ <section style={{alignItems:'center'}} className='flex flex-col md:flex-row px-5 py-10 md:py-1  bg-indigo-600 justify-center'>
        <div className='col-md-6 flex flex-col'>
             <h1 className=' text-white text-6xl font-hero-font'>Hi, <br/> I`m <span className='text-black'>R</span> Rajapandiyan
                 <p className='text-2xl'>I`m MERN Stack Developer</p>

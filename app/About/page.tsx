@@ -6,8 +6,8 @@ function page() {
   return (
     <>
   <Header/>
-    <section style={{minHeight:'90vh'}} className='flex md:flex-row flex-col bg-indigo-600'>
-        <div  style={{position:"relative",zIndex:"899",alignItems:'center'}} className='md:w-1/2 px-5 flex'>
+    <section  className='flex md:flex-row flex-col bg-indigo-600'>
+        <div  style={{position:"relative",alignItems:'center'}} className='md:w-1/2 px-5 flex'>
             <Image src={About} alt='About'/>
         </div>
         <div className='md:w-1/2 flex justify-center my-10 md:my-1 px-10'>
