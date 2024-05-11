@@ -9,7 +9,7 @@ let [open,isopen]=useState(false)
     return (
         <nav className="bg-indigo">
     
-        <div className="flex justify-between items-center py-4">
+        <div className="d-flex justify-content-between align-items-center py-4">
             <div className="flex-shrink-0">
                 <h2 className="text-white text-lg font-bold ms-4">Rajapandiyan</h2>
             </div>
@@ -18,13 +18,13 @@ let [open,isopen]=useState(false)
                 <TiThMenu size={30}/>
                 </button>
             </div>
-            <div className="d-none d-md-flex flex-grow justify-end items-center me-4">
+            <div className="d-none ms-auto me-3 d-md-flex flex-grow justify-end items-center me-4">
                 <ul className="flex space-x-4">
-                    <li><Link href="/" className="text-white font-bold text-decoration-none">Home</Link></li>
-                    <li><Link href="/About" className="text-white font-bold  text-decoration-none">About</Link></li>
-                    <li><Link href="/Project" className="text-white font-bold  text-decoration-none">Project</Link></li>
-                    <li><Link href="/Contact" className="text-white font-bold  text-decoration-none">Contact</Link></li>
-                    <li><Link href="/Resume" className="text-white font-bold  text-decoration-none">Resume</Link></li>
+                    <li><Link href="/" className="text-white font-bold text-decoration-none ms-3">Home</Link></li>
+                    <li><Link href="/About" className="text-white font-bold  text-decoration-none ms-3">About</Link></li>
+                    <li><Link href="/Project" className="text-white font-bold  text-decoration-none ms-3">Project</Link></li>
+                    <li><Link href="/Contact" className="text-white font-bold  text-decoration-none ms-3">Contact</Link></li>
+                    <li><Link href="/Resume" className="text-white font-bold  text-decoration-none ms-3">Resume</Link></li>
                 </ul>
             </div>
         </div>
