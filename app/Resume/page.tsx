@@ -18,7 +18,7 @@ function page() {
                 <h1 className='text-4xl border-b-4 border-primary mb-5 w-[140px] font-bold'>Resume</h1>
                 <p className='pb-5'>You can view my resume </p>
                 <button className="bg-yellow-500 hover:bg-yellow-700 transition duration-300 text-white font-bold py-2 px-4 rounded">
-  <Link  className='text-decoration-none' download={true} href={'https://i.ibb.co/xggC368/Resume-1.png'}>View Resume</Link>
+  <Link  className='text-decoration-none' download={true} href={'https://i.ibb.co/SKk96H0/rajapandiyan-Mern-Resume-1.png'}>View Resume</Link>
 </button>
 
             </div>
