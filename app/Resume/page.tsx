@@ -8,7 +8,6 @@ function page() {
 
   return (
     <>
-    <Header/>
     <section id='resume'  className='flex flex-col py-10  md:flex-row bg-secondary bg-indigo-600 px-5'>
         <div className=' md:w-1/2 flex justify-center md:justify-end'>
             <Image className='w-[300px]' alt='resume' src={ResumeImg} />

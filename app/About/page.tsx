@@ -5,7 +5,6 @@ import Header from '@/Components/Header'
 function page() {
   return (
     <>
-  <Header/>
     <section  className='flex md:flex-row flex-col bg-indigo-600'>
         <div  style={{position:"relative",alignItems:'center'}} className='md:w-1/2 px-5 flex'>
             <Image src={About} alt='About'/>
