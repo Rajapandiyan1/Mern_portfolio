@@ -5,7 +5,7 @@ export default function Contact () {
         phone: '9080883914'
     }
 
-    return <section id='contact' style={{alignItems:'center',minHeight:'90vh'}} className='flex bg-indigo-light flex-col bg-primary px-5 justify-center text-white'>
+    return <section id='contact' style={{alignItems:'center',minHeight:'90vh'}} className='flex bg-indigo-light flex-col  px-5 justify-center text-white'>
         <div style={{alignItems:'center'}} className='flex flex-col '>
            
             <h1 className='text-4xl border-b-4 border-primary mb-5 w-[140px] font-bold'>Contact</h1>
