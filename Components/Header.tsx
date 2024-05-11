@@ -18,7 +18,7 @@ let [open,isopen]=useState(false)
                 <TiThMenu size={30}/>
                 </button>
             </div>
-            <div className="d-none d-md=flex flex-grow justify-end items-center me-4">
+            <div className="d-none d-md-flex flex-grow justify-end items-center me-4">
                 <ul className="flex space-x-4">
                     <li><Link href="/" className="text-white font-bold text-decoration-none">Home</Link></li>
                     <li><Link href="/About" className="text-white font-bold  text-decoration-none">About</Link></li>
@@ -31,12 +31,12 @@ let [open,isopen]=useState(false)
     
    { open && <div className="d-md-none">
         
-        <ul className="flex flex-column gap-y-5 mb-0 pb-3">
-                    <li><Link href="/" className="text-white font-bold mb-2  text-decoration-none">Home</Link></li>
-                    <li><Link href="/About" className="text-white font-bold mb-2  text-decoration-none">About</Link></li>
-                    <li><Link href="/Project" className="text-white font-bold mb-2  text-decoration-none">Project</Link></li>
-                    <li><Link href="/Contact" className="text-white font-bold mb-2  text-decoration-none">Contact</Link></li>
-                    <li><Link href="/Resume" className="text-white font-bold mb-2  text-decoration-none">Resume</Link></li>
+        <ul className="flex flex-column mb-0 pb-3">
+                    <li><Link href="/" className="text-white font-bold mb-3  text-decoration-none">Home</Link></li>
+                    <li><Link href="/About" className="text-white font-bold mb-3  text-decoration-none">About</Link></li>
+                    <li><Link href="/Project" className="text-white font-bold mb-3  text-decoration-none">Project</Link></li>
+                    <li><Link href="/Contact" className="text-white font-bold mb-3  text-decoration-none">Contact</Link></li>
+                    <li><Link href="/Resume" className="text-white font-bold mb-3  text-decoration-none">Resume</Link></li>
                 </ul>
         
     </div>}
