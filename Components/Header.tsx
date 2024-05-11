@@ -32,11 +32,11 @@ let [open,isopen]=useState(false)
    { open && <div className="d-md-none">
         
         <ul className="flex flex-column mb-0 pb-3">
-                    <li><Link href="/" className="text-white font-bold mb-3  text-decoration-none">Home</Link></li>
-                    <li><Link href="/About" className="text-white font-bold mb-3  text-decoration-none">About</Link></li>
-                    <li><Link href="/Project" className="text-white font-bold mb-3  text-decoration-none">Project</Link></li>
-                    <li><Link href="/Contact" className="text-white font-bold mb-3  text-decoration-none">Contact</Link></li>
-                    <li><Link href="/Resume" className="text-white font-bold mb-3  text-decoration-none">Resume</Link></li>
+                    <li><Link href="/" onClick={()=>{isopen(!open)}} className="text-white font-bold mb-3  text-decoration-none">Home</Link></li>
+                    <li><Link href="/About" onClick={()=>{isopen(!open)}} className="text-white font-bold mb-3  text-decoration-none">About</Link></li>
+                    <li><Link href="/Project" onClick={()=>{isopen(!open)}} className="text-white font-bold mb-3  text-decoration-none">Project</Link></li>
+                    <li><Link href="/Contact" onClick={()=>{isopen(!open)}} className="text-white font-bold mb-3  text-decoration-none">Contact</Link></li>
+                    <li><Link href="/Resume" onClick={()=>{isopen(!open)}} className="text-white font-bold mb-3  text-decoration-none">Resume</Link></li>
                 </ul>
         
     </div>}
