@@ -11,9 +11,7 @@ const Header = () => {
         
           <h2 className="navbar-brand ps-2 text-white font-bold" > Rajapandiyan</h2>
           <button className="ms-auto me-3 navbar-toggler text-white" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-            {/* <TiThMenu size={30}/>
-             */}
-             <span className="navbar-toggler-icon"></span>
+             <TiThMenu size={30}/>
           </button>
           <div className="collapse navbar-collapse" id="navbarNav">
             <ul className="navbar-nav ps-3 ps-md-1">
