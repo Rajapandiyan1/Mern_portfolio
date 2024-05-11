@@ -15,15 +15,15 @@ function Hero() {
   return (
   //  <div className='bg-indigo row me-0'>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Fuga, itaque tempore voluptatem libero, natus maiores fugit sed nemo ut harum temporibus consectetur, quaerat quam culpa ducimus. Deleniti dolores iste inventore.</div>
 
-    <section style={{minHeight:'90vh'}} className='row me-0 bg-indigo-light'>
-    <div className='col-12 col-md-6'>
-         <h1 className=''>Hi, <br/> Im <span className=''>R</span> Rajapandiyan 
-             <p className='text-2xl'>I`m MERN STACK DEVELOPER</p>
+    <section style={{minHeight:'90vh'}} className='row me-0 bg-indigo-700'>
+    <div className='col-12 col-md-6 flex flex-column justify-content-center align-items-center'>
+         <h1 className='text-white'>Hi, <br/> Im <span className='text-black'>R</span> Rajapandiyan 
+             <p className='text-2xl text-white'>I`m MERN STACK DEVELOPER</p>
          </h1>
          <div className='flex py-10'>
-             <a href={config.Insta} className=' hover:text-white'><RiInstagramLine size={40} /></a>
-             <a href={config.Linked} className=' hover:text-white'><CiLinkedin size={40}/></a>
-             <a href={config.git} className='hover:text-white'><FaSquareGithub size={40}/></a>
+             <Link href={config.Insta} className='pe-4 nav-linkH text-black'><RiInstagramLine size={40} /></Link>
+             <Link href={config.Linked} className='pe-4 nav-linkH text-black'><CiLinkedin size={40}/></Link>
+             <Link href={config.git} className='nav-linkH text-black'><FaSquareGithub size={40}/></Link>
          </div>
     </div>
     <div className="col-12 col-md-6">

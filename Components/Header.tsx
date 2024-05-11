@@ -3,36 +3,50 @@ import { useState } from 'react';
 import Link from 'next/link';
 
 const Header = () => {
-  const [isMenuOpen, setIsMenuOpen] = useState(false);
+    const [isOpen, setIsOpen] = useState(false);
 
-  const toggleMenu = () => {
-    setIsMenuOpen(!isMenuOpen);
-  };
+    const toggleMenu = () => {
+        setIsOpen(!isOpen);
+    };
 
-  return (
-    <nav className="navbar navbar-expand-lg navbar-light bg-indigo">
-  
-    <a className="navbar-brand" href="#">Navbar</a>
-    <button className="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-      <span className="navbar-toggler-icon"></span>
-    </button>
-    <div className="collapse navbar-collapse" id="navbarSupportedContent">
-      <ul className="navbar-nav me-auto mb-2 mb-lg-0">
-        <li className="nav-item">
-          <a className="nav-link active" aria-current="page" href="#">Home</a>
-        </li>
-        <li className="nav-item">
-          <a className="nav-link" href="#">Link</a>
-        </li>
-       
-        <li className="nav-item">
-          <a className="nav-link disabled"  aria-disabled="true">Disabled</a>
-        </li>
-      </ul>
-      
-    </div>
+    return (
+      <nav style={{minHeight:'10vh'}} className="bg-indigo-900">
+      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+          <div className="flex items-center justify-between h-16">
+              <div className="flex-shrink-0">
+                  <h2  className="text-white font-bold">Rajapandiyan</h2>
+              </div>
+              <div className="block md:hidden">
+                  <button onClick={toggleMenu} type="button" className="text-white hover:text-gray-300 focus:outline-none focus:text-gray-300">
+                      <svg className="h-6 w-6" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                          <path d="M4 6h16M4 12h16M4 18h16" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"/>
+                      </svg>
+                  </button>
+              </div>
+              <div className="hidden md:block">
+                  <div className="ml-10 flex items-baseline space-x-4">
+                      <Link href="#" className="text-white font-bold text-decoration-none hover:text-gray-300">Home</Link>
+                      <Link href="#" className="text-white font-bold text-decoration-none hover:text-gray-300">About</Link>
+                      <Link href="#" className="text-white font-bold text-decoration-none hover:text-gray-300">Project</Link>
+                      <Link href="#" className="text-white font-bold text-decoration-none hover:text-gray-300">Contact</Link>
+                      <Link href="#" className="text-white font-bold text-decoration-none hover:text-gray-300">Resume</Link>
+                  </div>
+              </div>
+          </div>
+      </div>
+      {/* Mobile menu, show/hide based on menu state. */}
+      {isOpen && (
+          <div className="md:hidden">
+              <div className="px-2 pt-2 pb-3 space-y-1 sm:px-3">
+                  <a href="#" className="text-white hover:text-gray-300 block">Home</a>
+                  <a href="#" className="text-white hover:text-gray-300 block">Link</a>
+                  <a href="#" className="text-white opacity-50 cursor-not-allowed block">Disabled</a>
+              </div>
+          </div>
+      )}
   </nav>
-  );
+  
+    );
 };
 
 export default Header;
